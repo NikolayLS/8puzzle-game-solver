@@ -28,7 +28,6 @@ std::vector<PuzzleBoard> bestFirstSearch(const PuzzleBoard& board, int (PuzzleBo
 	visitedBoards.push_back(board);
 	std::pair <PuzzleBoard, std::vector<PuzzleBoard>> minHValueBoard(board, emptyBoard);
 
-	//At the begining we have only the first board:
 	toBeChecked.push_back(std::pair<PuzzleBoard, std::vector<PuzzleBoard>>(board, emptyBoard));
 
 	while (!toBeChecked.empty())

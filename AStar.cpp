@@ -29,7 +29,7 @@ std::vector<PuzzleBoard> aStar(const PuzzleBoard& board, int (PuzzleBoard::*func
 		minHValueBoard = toBeChecked[0];
 		for (int i = 0; i < toBeChecked.size(); i++)
 		{
-			if ((toBeChecked[i].first.*function)() + 200*toBeChecked[i].second.size() <= (minHValueBoard.first.*function)() + 200 * toBeChecked[i].second.size())
+			if ((toBeChecked[i].first.*function)() + 100*toBeChecked[i].second.size() <= (minHValueBoard.first.*function)() + 100 * toBeChecked[i].second.size())
 				minHValueBoard = toBeChecked[i];
 		}
 		toBeChecked = checkedRemover(toBeChecked, minHValueBoard.first);

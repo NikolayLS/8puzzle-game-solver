@@ -7,15 +7,14 @@
 
 class PuzzleBoard
 {
-private:
-	// in this task the memory is important bcs the algorithms are with bad space complaxity
+	// in this task memory is important bcs algorithms are with bad space complexity
 	// this is game board, but instead of making 2d int/short array i will parce it to only one integer
-	// i dont have to use integer to know where is the "empty/zerp" bcs int is 4 bytes but char is 1 so for this situation char
+	// dont have to use integer to know where is the "empty/zero" bcs int is 4 bytes, but char is 1 so for this situation char
 	// is better :)
 
-	// unsigned int gameBoard explenation - max value of int is 4,294,967,295
-	// int this task we will need 9 digites but we will have corner case with 0 in the begining
-	// i will put 1 in the begining of the number so the number will look like -
+	// unsigned int gameBoard - max value of int is 4,294,967,295
+	// in this task we will need 9 digites but we have corner case with 0 in the begining
+	// just putting 1 in the begining of the number so the number will look like -
 	// 1-xxx-xxx-xxx
 private:
 	unsigned int gameBoard;

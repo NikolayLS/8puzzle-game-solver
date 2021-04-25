@@ -36,7 +36,6 @@ std::ostream& operator<<(std::ostream& os, const PuzzleBoard& puzzleBoard)
 		os << (puzzleBoard.gameBoard / temp)%10;
 		if (i == 2 || i == 5 || i == 8) os << std::endl;
 	}
-	os <<"empty index: "<< puzzleBoard.getZeroIndex()<< std::endl << std::endl;
 	return os;
 }
 
